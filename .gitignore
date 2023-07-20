@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Firebase creds
+/lib/firebase.js
+
 # testing
 /coverage
 

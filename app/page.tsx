@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import portfolioPic from "../public/images/IMG_7265.PNG";
