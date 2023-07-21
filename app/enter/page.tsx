@@ -18,7 +18,6 @@ import debounce from 'lodash.debounce';
 export default function EnterPage({ }) {
   const { user, username } = useContext(UserContext);
 
-  console.log(user, username)
   return (
     <main>
       { user ?
@@ -102,7 +101,7 @@ const UsernameForm = (): any => {
   const onSubmit = async (e: any) => {
     e.preventDefault();
     const batch = writeBatch(firestore);
-    const userDocRef = doc(firestore, 'user', user.uid);
+    const userDocRef = doc(firestore, 'users', user.uid);
     const collectionRef = collection(firestore, 'usernames');
     
     try {
